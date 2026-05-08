@@ -8,9 +8,11 @@ Projeto completo de Engenharia e Análise de Dados utilizando processos ETL com 
 
 ## Dashboard Principal
 
-> Adicione aqui um print do dashboard
 
-![Dashboard](images/dashboard.png)
+
+<img width="1314" height="1400" alt="image" src="https://github.com/user-attachments/assets/2b2fc74d-c95c-470e-93e6-79e5c02ecbe3" />
+
+Acesse por aqui:https://spotify-youtube-etl-dashboard.onrender.com
 
 ---
 
