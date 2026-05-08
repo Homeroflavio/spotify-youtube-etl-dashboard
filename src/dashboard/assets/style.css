@@ -1,0 +1,380 @@
+/* =========================================================
+   BODY
+========================================================= */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #0b1120 0%,
+            #111827 100%
+        );
+
+    font-family: "Segoe UI", sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.main-container {
+    padding:
+        20px
+        30px
+        40px
+        30px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    margin-bottom: 30px;
+}
+
+.dashboard-title {
+
+    font-size: 52px;
+    font-weight: 800;
+
+    color: white;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+.dashboard-subtitle {
+
+    color: #94a3b8;
+
+    font-size: 18px;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   KPI ROW
+========================================================= */
+
+.kpi-row {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   KPI CARDS
+========================================================= */
+
+.kpi-card {
+
+    border: none !important;
+
+    border-radius: 22px !important;
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+
+    height: 120px;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.35);
+}
+
+.kpi-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,0.12);
+}
+
+.kpi-title {
+
+    color: white;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+
+    opacity: 0.9;
+}
+
+.kpi-value {
+
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   KPI COLORS
+========================================================= */
+
+.blue {
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #38bdf8
+        );
+}
+
+.green {
+    background:
+        linear-gradient(
+            135deg,
+            #16a34a,
+            #84cc16
+        );
+}
+
+.red {
+    background:
+        linear-gradient(
+            135deg,
+            #dc2626,
+            #ef4444
+        );
+}
+
+.orange {
+    background:
+        linear-gradient(
+            135deg,
+            #ea580c,
+            #f59e0b
+        );
+}
+
+.purple {
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #c084fc
+        );
+}
+
+
+/* =========================================================
+   TABS
+========================================================= */
+
+.custom-tabs {
+
+    margin-bottom: 25px;
+}
+
+.custom-tab {
+
+    background-color: #1e293b !important;
+
+    color: #cbd5e1 !important;
+
+    border: none !important;
+
+    padding:
+        14px
+        24px !important;
+
+    border-radius:
+        14px
+        14px
+        0
+        0 !important;
+
+    margin-right: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.custom-tab:hover {
+
+    background-color: #334155 !important;
+
+    color: white !important;
+}
+
+.custom-tab-selected {
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        ) !important;
+
+    color: white !important;
+
+    box-shadow:
+        0 0 18px rgba(124,58,237,0.4);
+}
+
+
+/* =========================================================
+   TAB AREA
+========================================================= */
+
+.tab-content-area {
+
+    min-height: 500px;
+}
+
+
+/* =========================================================
+   GRAPH CARDS
+========================================================= */
+
+.graph-card {
+
+    background-color: #111827 !important;
+
+    border: 1px solid rgba(255,255,255,0.05) !important;
+
+    border-radius: 24px !important;
+
+    margin-bottom: 28px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.35);
+}
+
+.graph-card:hover {
+
+    box-shadow:
+        0 0 30px rgba(59,130,246,0.12);
+}
+
+
+/* =========================================================
+   PLOTLY
+========================================================= */
+
+.js-plotly-plot {
+
+    border-radius: 24px;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.dash-table-container {
+
+    background-color: #111827 !important;
+
+    border-radius: 22px;
+
+    padding: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.35);
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+
+    color: white;
+
+    margin-bottom: 18px;
+
+    margin-top: 10px;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #334155;
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #475569;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .dashboard-title {
+
+        font-size: 40px;
+    }
+
+    .kpi-value {
+
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-container {
+
+        padding: 15px;
+    }
+
+    .dashboard-title {
+
+        font-size: 28px;
+    }
+
+    .dashboard-subtitle {
+
+        font-size: 14px;
+    }
+
+    .kpi-card {
+
+        margin-bottom: 15px;
+    }
+}
