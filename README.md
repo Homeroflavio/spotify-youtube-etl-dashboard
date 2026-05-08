@@ -147,6 +147,17 @@ Utilizada para:
 
 ---
 
+## Banco de Dados e Scripts SQL
+
+O projeto disponibiliza os scripts SQL completos utilizados durante o desenvolvimento do ETL e da modelagem relacional.
+
+Localização:
+
+
+src/database/scripts/
+
+---
+
 # Arquitetura do Projeto
 
 ```text
