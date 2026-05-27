@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.cache
+venv/
+
+backup_etl.dump
+
+data/raw/
+data/processed/
+
+.vscode/
+.git/
