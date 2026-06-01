@@ -12,7 +12,7 @@ Projeto completo de Engenharia e Análise de Dados utilizando processos ETL com 
 
 <img width="1314" height="1400" alt="image" src="https://github.com/user-attachments/assets/2b2fc74d-c95c-470e-93e6-79e5c02ecbe3" />
 
-Acesse por aqui:https://spotify-youtube-etl-dashboard.onrender.com
+### Acesse por aqui:https://spotify-youtube-etl-dashboard.onrender.com
 
 ---
 
@@ -155,6 +155,74 @@ Localização:
 
 
 src/database/scripts/
+
+---
+
+## 🐳 Executando com Docker
+
+### Pré-requisitos
+
+- Docker Desktop instalado
+- Docker Compose habilitado
+
+### 1. Clonar o repositório
+
+```bash
+git clone <url-do-repositorio>
+cd spotify-youtube-etl
+```
+
+### 2. Subir os containers
+
+```bash
+docker compose up --build
+```
+
+Esse comando irá:
+
+- Criar o container PostgreSQL
+- Criar o container do Dashboard
+- Configurar a comunicação entre os serviços
+- Disponibilizar o dashboard localmente
+
+### 3. Acessar o Dashboard
+
+Abra o navegador em:
+
+```text
+http://localhost:8050
+```
+
+### 4. Encerrar os containers
+
+```bash
+docker compose down
+```
+
+### Executar em segundo plano
+
+```bash
+docker compose up -d
+```
+
+Para visualizar os logs:
+
+```bash
+docker compose logs -f
+```
+
+---
+
+## Arquitetura Docker
+
+O projeto utiliza dois containers:
+
+| Serviço | Descrição |
+|----------|-----------|
+| PostgreSQL | Armazenamento dos dados processados pelo ETL |
+| Dashboard | Interface de visualização e análise dos dados |
+
+Os containers se comunicam através da rede interna criada automaticamente pelo Docker Compose.
 
 ---
 
